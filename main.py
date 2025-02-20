@@ -3,6 +3,7 @@ import tkinter
 window = tkinter.Tk()
 window.minsize(180, 200)
 window.config(background="light gray")
+window.title("BMI Calculator")
 
 
 def bmi_calculator():

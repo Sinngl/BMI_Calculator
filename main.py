@@ -1,9 +1,10 @@
 import tkinter
 
 window = tkinter.Tk()
-window.minsize(180, 200)
+window.minsize(250,250)
 window.config(background="light gray")
 window.title("BMI Calculator")
+window.config(padx=30, pady=30)
 
 
 def bmi_calculator():
@@ -34,13 +35,13 @@ weight_label = tkinter.Label(text="Enter your Weight (kg)")
 weight_label.pack()
 weight_label.config(background="light gray", foreground="black")
 
-weight_input = tkinter.Entry(width=7, background="white", foreground="black", highlightthickness=0)
+weight_input = tkinter.Entry(width=10, background="white", foreground="black", highlightthickness=0)
 weight_input.pack()
 
 height_label = tkinter.Label(text="Enter your Height (cm)", background="light gray", foreground="black")
 height_label.pack()
 
-height_input = tkinter.Entry(width=7, background="white", foreground="black", highlightthickness=0)
+height_input = tkinter.Entry(width=10, background="white", foreground="black", highlightthickness=0)
 height_input.pack()
 
 result_button = tkinter.Button(text="Calculate", command=bmi_calculator, highlightthickness=0)
